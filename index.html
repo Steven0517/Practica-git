@@ -12,5 +12,41 @@
         aperiam velit id voluptate! Harum debitis consequuntur mollitia cupiditate placeat 
         numquam aut assumenda? Nulla voluptatum enim corrupti rerum eius.
     </p>
+
+    <h2>Formulario de contacto</h2>
+    <form>
+        <fieldset>
+            <legend>Información personal</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensaje</legend>
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <label><input type="checkbox" name="newsletter"> Deseo recibir newsletter</label>
+            <label><input type="checkbox" name="terminos"> Acepto los términos y condiciones</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
 </body>
 </html>
